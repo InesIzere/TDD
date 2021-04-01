@@ -1,5 +1,15 @@
 class QuotesController < ApplicationController
     require 'zendesk_api'
+    
+    def submission
+    end
+    
+    # def index
+    #   @quotes = Quote.all
+    # end
+    def index
+      render json: {success: true}
+    end
 
     def create
         

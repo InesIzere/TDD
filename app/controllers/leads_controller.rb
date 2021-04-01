@@ -2,7 +2,12 @@ class LeadsController < ApplicationController
     # require 'sendgrid-ruby'
     require 'zendesk_api'
     include SendGrid
+    def index
+        @leads = Lead.all
+      end
+    # def submission
 
+    # end
     def create
 
         puts params

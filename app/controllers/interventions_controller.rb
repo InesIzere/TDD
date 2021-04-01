@@ -6,6 +6,8 @@ class InterventionsController < ApplicationController
           redirect_to main_app.root_path # halts request cycle
         end
       end
+
+    
     require 'zendesk_api' 
     # check the building that belongs that to a selected customer
     def building
@@ -67,7 +69,10 @@ class InterventionsController < ApplicationController
     end
     # Create methods that used parameter coming
     # from our intervention form which the user has submitted.
-
+    def index
+        render json: {success: true}
+    end
+    
     def create
         @current_user_id = current_user.id 
         column = params[:column]
@@ -113,17 +118,7 @@ class InterventionsController < ApplicationController
                 create_intervention_ticket()
                 redirect_back fallback_location: root_path, notice: "Intervention Created"
               end
-            # #   if @intervention.save
-            # #     create_intervention_ticket()
-            # #     # flash[:notice] = "intervention successfull saved "
-            # #     # redirect_to '/admin/interventions'
-            # #     redirect_to root_path
-            # #   else
-            # #     flash[:notice] = "intervention not saved "
-            # #     redirect_to '/interventions'
-            # #     # redirect_to root_path
-               
-            # #   end
+          
            
 
     end
@@ -163,9 +158,9 @@ class InterventionsController < ApplicationController
     def show
         # redirect_to '/admin/interventions'
     end
-    def interventions
-    # render '/interventions/interventions'
-    end
+    # def interventions
+    # # render '/interventions/interventions'
+    # end
 
       private
 

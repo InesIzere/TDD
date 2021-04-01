@@ -51,6 +51,7 @@ Rails.application.routes.draw do
 
 
   post 'interventions' => 'interventions#create'
+  post 'interventions' => 'interventions#index'
   get 'interventions' => 'interventions#interventions'
 
   get 'interventions/building' => 'interventions#building'
@@ -59,8 +60,9 @@ Rails.application.routes.draw do
   get 'interventions/elevator' => 'interventions#elevator'
   
   resources :geolocations
+  resources :leads
 
-  
+  get "/(*url)", to: redirect('/404')
 
 end
 
