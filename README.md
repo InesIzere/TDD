@@ -266,7 +266,7 @@ The practice of test-based development is to follow a backwards approach as foll
 2.	Pass it on
 3.	Refactoring your code.
 </br>
-In our test we have created a Stream class that contain a standard method getContent that returns html ( a string that contains valid html ready to be displayed on a web page) and we have chose Advice and Joke.
+In our test using rspec, we have created a Stream class that contain a standard method getContent that returns html ( a string that contains valid html ready to be displayed on a web page) and we have chose Advice and Joke.
 </br>
 After we added unit tests in 3 places in your existing code information system and we got our test results.
 
@@ -280,10 +280,13 @@ After we added unit tests in 3 places in your existing code information system a
 ![](streamer7.PNG) 
 ![](streamer8.PNG) 
 ![](streamer9.PNG) 
+
 </br>
+[url for Bonus](https://github.com/InesIzere/Streamer), where i use jest for test my streamer (and npm for advice streamer.), the difference between the ruby testing is that here in bonusi(js)i considered if the external api has problem(not responding, is down or not accessible or return nothing)
 </br>
-</br>
-[url for Bonus](https://github.com/InesIzere/Streamer), where i use jest for test my streamer (and npm for advice streamer.)
+
+![](streamerJS1.PNG) 
+
 <!-- </details> -->
 
    
