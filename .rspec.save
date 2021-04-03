@@ -1,0 +1,6 @@
+--color
+--format progress
+--no-profile
+--no-fail-fast
+--order define
+

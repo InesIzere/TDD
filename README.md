@@ -176,7 +176,8 @@ Finally we tried to add **Weather** to *Google Maps* but this is as far as we go
 
 
 # Extented Data Warehouse #
-
+<details>
+<summary><i>CLICK TO EXPAND</i></summary>
 <u><b>This week we had to extend our data warehouse with a table named Fact Intervention:</u></b>
 
 ![](fact_int.jpg)
@@ -186,8 +187,11 @@ Finally we tried to add **Weather** to *Google Maps* but this is as far as we go
 Then we developed a rake task to generate random data into that table.
 
 ![](fact_int2.jpg)
+</details>
 
 # Consolidation Week #
+<details>
+<summary><i>CLICK TO EXPAND</i></summary>
 <u><b>This week We created  an intervention table and its REST API</u></b> 
 </br></br>
 </br>
@@ -243,8 +247,44 @@ wwhen select a column then the elevators can be shown.
   PUT for Changing the status (example of intervention 1) of the request for action to "Completed" and add an end date and time (Timestamp).[url to verify in postman](https://shimwerestapi.azurewebsites.net/api/interventions/EndDate/1).</br>
   ![](17.PNG) 
   For other specification please check my restapi url in postman. https://shimwerestapi.azurewebsites.net/api/interventions
+</details>
+
+# TDD(test-driven development) Week #
+<!-- <details> -->
+</br>
+*********************************
+Use these credentials to access the back office:
+Username: nicolas.genest@codeboxx.biz
+Password: newdog1
+****************************
+</br>
+Milestones for this week:
+(Red, green, Factoring explained and Unit Tests)
+</br>
+The practice of test-based development is to follow a backwards approach as follows:
+1.	Write a test that fails
+2.	Pass it on
+3.	Refactoring your code.
+</br>
+In our test we have created a Stream class that contain a standard method getContent that returns html ( a string that contains valid html ready to be displayed on a web page) and we have chose Advice and Joke.
+</br>
+After we added unit tests in 3 places in your existing code information system and we got our test results.
 
 
+![](streamer1.PNG) 
+![](streamer2.PNG) 
+![](streamer3.PNG) 
+![](streamer4.PNG) 
+![](streamer5.PNG) 
+![](streamer6.PNG) 
+![](streamer7.PNG) 
+![](streamer8.PNG) 
+![](streamer9.PNG) 
+</br>
+</br>
+</br>
+[url for Bonus](https://github.com/InesIzere/Streamer), where i use jest for test my streamer (and npm for advice streamer.)
+<!-- </details> -->
 
    
 
